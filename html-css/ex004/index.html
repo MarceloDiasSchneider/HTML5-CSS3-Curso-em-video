@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando un FavIcon</title>
+    <link id="icon" rel="shortcut icon" href="imagens/sfws.ico" type="image/x-icon">
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vamos aprender como adicionar a nossa pagina web um FavIcon</h1>
+    <h2>Links de site de FavIcon</h2>
+    <p><a href="https://iconarchive.com/" target="blank">Icon Archive</a></p>
+    <p><a href="https://favicon.cc" target="blank">Favicon CC</a></p>
+    <p><a href="https://favicon.io" target="black"> Favicon IO</a></p>
+    <p>Obs.: Importante que o formato da imagem de um FavIcon seja .ico</p>
+
+    <button id="btn">Alterar FavIcon</button>
+</body>
+<script>
+    document.querySelector("#btn").addEventListener("click", () => {carregarFavIcon()})
+    let favIcon = document.querySelector("#icon")
+    let ico = 0
+    function carregarFavIcon(){
+        switch (ico) {
+            case 0:
+                link = 'imagens/html5.ico'
+                ico = 1
+                break;
+            case 1:
+                link = 'imagens/ms.ico'
+                ico = 2
+                break;
+            case 2:
+                link = 'imagens/sfws.ico'
+                ico = 0
+                break;
+        }
+        favIcon.href = link
+    }
+
+</script>
+</html>
