@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        mark{
+            background-color: rgb(238, 214, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatando um texto</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta fraze temos um <b>termo em negrito</b> usando a tag &lt;b&gt;. - Não semantico </p>
+    <p>Nesta fraze temos um <strong>termo em negrito</strong> usando a tag &lt;strong&gt;. - Semantico </p>
+    <h2>Italico / Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em italico</i> usando a tag &lt;i&gt;. - Não semantico</p>
+    <p>Nesta frase temos um <em>termo em italico</em> usando a tag &lt;em&gt;. - Semantico</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos também usar <mark style="background-color: cadetblue;">um textos marcados</mark> com a tag mark</p>
+    <p>Em outro paragrafo temos outro <mark>testo marcado</mark></p>
+    <h2>Texto pequeno</h2>
+    <p>Estamos criando um texto de <small>letras pequenas</small></p>
+    <h2>Texto deletado</h2>
+    <p>podemos marcar um texto como <del>excluido</del> par indicar que ele deve ser lido mas não considerado</p>
+    <h2>Texto inserido</h2>
+    <p>podemos marcar um texto com <ins>inserido</ins> para dar uma enfase e indicar que ele foi adicionado depois.</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir expeções matematicas como: x<sup>2</sup> + 3 = 5</p>
+    <h2>Texto subescrito</h2>
+    <p>Para inserir expreções de quimica como a formula da agua: H<sub>2</sub>O</p>
+    <h2>Codigo-Fonte</h2>
+    <p>Este comando <code>document.getElementById('teste')</code> é um comando da linguagem JavaScript</p>
+    <p>Mais um código JavaScript porem em varias linhas</p>
+    <pre>
+        <code>
+    let num = pront("digite um número")
+    if( num < 60){
+        print('O numero é menor que 60')
+    } else {
+        print('O numero não é menor que 60 ou não pe numero')
+    }
+        </code>
+    </pre>
+    <h2>Citação simples</h2>
+    <p>Como diria o pai de uma amigo: <q>o computador é um burro muito rapido</q></p>
+    <h2>Citação completa</h2>
+    <p>Uma citação completo com &lt;blockquote&gt; faz a quebra de linha e também um espaçamento de recuo</p>
+    <blockquote cite='Lorem ipsum'>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A sunt cum nostrum aut sapiente veritatis repudiandae ullam error ipsum consequatur. Error sit modi vitae rem fugiat consectetur dolore incidunt voluptate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illo commodi neque minima doloribus nam itaque a esse praesentium officiis ex, eveniet obcaecati deleniti? Ut, necessitatibus esse. Tempora, id reprehenderit?
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS3</abbr> e estou gostando muito</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Este texto esta invertido com uma tag muito estranha.</bdo></p>
+</body>
+</html>
